@@ -26,6 +26,6 @@ class EchoHandler(socketserver.DatagramRequestHandler):
 
 if __name__ == "__main__":
     # Creamos servidor de eco y escuchamos
-    serv = socketserver.UDPServer(('', 6001), EchoHandler)
+    serv = socketserver.UDPServer(('', int(sys.argv[1]), fichero_audio), EchoHandler)
     print("Lanzando servidor UDP de eco...")
     serv.serve_forever()
