@@ -10,7 +10,7 @@ import socket
 try:
     METODO = sys.argv[1]
     RECEPTOR = sys.argv[2] + '@'
-    #RECEPTOR = sys.argv[2] + '@' + sys.argv[3] + ':' + int(sys.argv[5])
+    #RECEPTOR = sys.argv[2] + '@' + sys.argv[3] + ':' + int(sys.argv[5])#2
     IP = sys.argv[3] + ':'
     PORT = int(sys.argv[4])
     #EXPIRES = int(sys.argv[5])
@@ -23,6 +23,8 @@ PORT = 6001
 
 # Contenido que vamos a enviar
 LINE = (METODO.upper() + RECEPTOR + IP + PORT)
+#LINE = (METODO.upper() + RECEPTOR)#2
+
 
 #LINE = '¡Hola mundo!'
 
