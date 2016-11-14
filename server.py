@@ -34,8 +34,8 @@ class EchoHandler(socketserver.DatagramRequestHandler):
                 break
 
 if __name__ == "__main__":
+    #METODOS = [INVITE, ACK, BYE]
     # Creamos servidor de eco y escuchamos
-    serv = socketserver.UDPServer('', (SERVER, PORT, fichero_audio), EchoHandler)
+    serv = socketserver.UDPServer((SERVER, int(PORT)), EchoHandler)
     print("Listening...")
     serv.serve_forever()
-    
