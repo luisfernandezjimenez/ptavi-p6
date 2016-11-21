@@ -39,7 +39,6 @@ if respuesta == ['SIP/2.0 100 Trying', '', 'SIP/2.0 180 Ringing', '',
 
 print("Terminando socket...")
 
-
 # Cerramos todo
 my_socket.close()
 print("Fin.")
